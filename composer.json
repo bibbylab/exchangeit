@@ -1,19 +1,35 @@
 {
     "name": "bibbylab/exchangeit",
     "description": "Training project for recruits",
-    "type": "project",
-    "require": {
-        "codeigniter4/framework": "^4.0",
-        "symfony/console": "^5.1"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.5"
-    },
     "license": "GPL",
     "authors": [
         {
             "name": "Wojciech Duda",
-            "email": "wduda@bfspl.pl"
+            "email": "wo.duda@gmail.com"
         }
-    ]
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=7.2",
+        "codeigniter4/framework": "^4.0"
+    },
+	"require-dev": {
+		"fzaninotto/faker": "^1.9@dev",
+		"mikey179/vfsstream": "1.6.*",
+		"phpunit/phpunit": "^8.5"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\Support\\": "tests/_support"
+		}
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"@composer dump-autoload"
+		],
+		"test": "phpunit"
+	},
+	"support": {
+		"source": "https://github.com/bibbylab/exchangeit"
+	}
 }
