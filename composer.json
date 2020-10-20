@@ -1,0 +1,19 @@
+{
+    "name": "bibbylab/exchangeit",
+    "description": "Training project for recruits",
+    "type": "project",
+    "require": {
+        "codeigniter4/framework": "^4.0",
+        "symfony/console": "^5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Wojciech Duda",
+            "email": "wduda@bfspl.pl"
+        }
+    ]
+}
